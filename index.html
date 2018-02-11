@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pilot search</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Andy Jiang">
+  <!-- <meta name="description" content="Quick and dirty Alternative Minimum Tax calculation focused on exercising incentive stock options."> -->
+  <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta property="og:title" content="AMT Calculator">
+  <meta property="og:description" content="Quick and dirty Alternative Minimum Tax calculation focused on exercising incentive stock options.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AMT Calculator"> -->
+  <!-- <meta property="og:image" content="https://emojipacks.com/img/meta.png" /> -->
+  <!-- <meta name="twitter:image" content="https://emojipacks.com/img/meta.png" /> -->
+  <meta name="twitter:site" content="@andyjiang">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- <link rel="shortcut icon" href="../img/favicon.png" /> -->
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.5.0/dist/instantsearch.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.8.1/tachyons.min.css">
+  <!-- <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.24.0/dist/algoliasearch.helper.min.js"></script> -->
+  
+  <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+</head>
+<body class="avenir">
+  <div class="mt6 w-100">
+    <div class="f2 mv3 mw6 center">Search pilots</div>
+    <div id="search-box" class="mw6 center">
+      <!-- SearchBox widget will appear here -->
+    </div>
+
+    <div class="w-100 ph5 dib mt4">
+      <div id="refinement-list-network" class="w-20 fl"></div>
+      <div id="refinement-list-year" class="w-20 fl"></div>
+      <div id="refinement-list-studio" class="w-20 fl"></div>
+      <div id="refinement-list-genre" class="w-20 fl"></div>
+      <div id="refinement-list-cam" class="w-20 fl"></div>
+    </div>
+
+    <div class="mw6 center mt4">
+      <div id="hits"></div>
+    </div>
+
+    <script type="text/html" id="hit-template">
+      <div class="hit">
+        <div class="hit-content">
+          <h1 class="f3 fw3">{{{_highlightResult.title.value}}} - {{{_highlightResult.year.value}}}</h1>
+          <p class="f5 lh-copy">{{{_highlightResult.logline.value}}}</p>
+          <p class="b">{{{_highlightResult.status.value}}}</p>
+          <p class="">Team: {{{team}}}</p>
+          <p class="">Cast: {{{cast}}}</p>
+          <p class="">Studios: {{{studios}}}</p>
+          <p class="">Network: {{{_highlightResult.network.value}}}</p>
+          <p class="f6">
+            {{{_highlightResult.cam.value}}}
+            {{{_highlightResult.genre.value}}}
+          </p>
+        </div>
+      </div>
+    </script>
+
+    <!-- <script type="text/html" id="refinement-networks-template">
+      <div class="networks">
+        
+      </div>
+    </script> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.5.0"></script>
+  <script src="index.js"></script>
+</body>
+</html>

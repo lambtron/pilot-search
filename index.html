@@ -4,24 +4,22 @@
   <title>pilot search</title>
   <meta charset="utf-8">
   <meta name="author" content="Andy Jiang">
-  <!-- <meta name="description" content="Quick and dirty Alternative Minimum Tax calculation focused on exercising incentive stock options."> -->
-  <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <meta property="og:title" content="AMT Calculator">
-  <meta property="og:description" content="Quick and dirty Alternative Minimum Tax calculation focused on exercising incentive stock options.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="AMT Calculator"> -->
-  <!-- <meta property="og:image" content="https://emojipacks.com/img/meta.png" /> -->
-  <!-- <meta name="twitter:image" content="https://emojipacks.com/img/meta.png" /> -->
+
   <meta name="twitter:site" content="@andyjiang">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- <link rel="shortcut icon" href="../img/favicon.png" /> -->
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.5.0/dist/instantsearch.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.8.1/tachyons.min.css">
-  <!-- <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.24.0/dist/algoliasearch.helper.min.js"></script> -->
   
-  <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113947580-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113947580-1');
+  </script>
+
 </head>
 <body class="avenir">
   <div class="mt6 w-100">
@@ -44,7 +42,7 @@
 
     <script type="text/html" id="hit-template">
       <div class="hit">
-        <div class="hit-content">
+        <div class="hit-content mv5">
           <h1 class="f3 fw3">{{{_highlightResult.title.value}}} - {{{_highlightResult.year.value}}}</h1>
           <p class="f5 lh-copy">{{{_highlightResult.logline.value}}}</p>
           <p class="b">{{{_highlightResult.status.value}}}</p>
@@ -66,6 +64,9 @@
       </div>
     </script> -->
   </div>
+  <footer class="w-100 center tc mb5">
+    <small class="f6 db"><a class="link dim black-80" target="_blank" href="https://www.andyjiang.com/">made with 🍉  by andy</a></small>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.5.0"></script>
   <script src="index.js"></script>

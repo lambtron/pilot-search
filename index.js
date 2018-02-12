@@ -34,9 +34,15 @@
       container: '#refinement-list-network',
       attributeName: 'network',
       operator: 'and',
+      showMore: {
+        templates: {
+          active: '<a class="dib mt2 f6" href="#">Show less</a>',
+          inactive: '<a class="dib mt2 f6" href="#">Show more</a>'
+        }
+      },
       sortBy: ['isRefined', 'name:asc'],
       templates: {
-        header: '<b>Network</b>',
+        header: '<span class="dib mb2"><b>Network</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
@@ -49,7 +55,7 @@
       operator: 'and',
       sortBy: ['isRefined', 'name:asc'],
       templates: {
-        header: '<b>Year</b>',
+        header: '<span class="dib mb2"><b>Year</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
@@ -61,9 +67,15 @@
       container: '#refinement-list-studio',
       attributeName: 'studios',
       operator: 'and',
+      showMore: {
+        templates: {
+          active: '<a class="dib mt2 f6" href="#">Show less</a>',
+          inactive: '<a class="dib mt2 f6" href="#">Show more</a>'
+        }
+      },
       sortBy: ['isRefined', 'name:asc'],
       templates: {
-        header: '<b>Studio</b>',
+        header: '<span class="dib mb2"><b>Studio</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
@@ -76,7 +88,7 @@
       operator: 'and',
       sortBy: ['isRefined', 'name:asc'],
       templates: {
-        header: '<b>Genre</b>',
+        header: '<span class="dib mb2"><b>Genre</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
@@ -92,7 +104,7 @@
       sortBy: ['isRefined', 'name:asc'],
       autoHideContainer: false,
       templates: {
-        header: '<b>Cam</b>',
+        header: '<span class="dib mb2"><b>Cam</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })

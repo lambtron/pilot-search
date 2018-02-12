@@ -40,7 +40,7 @@
           inactive: '<a class="dib mt2 f6" href="#">Show more</a>'
         }
       },
-      sortBy: ['isRefined', 'name:asc'],
+      sortBy: ['isRefined', 'count:desc', 'name:asc'],
       templates: {
         header: '<span class="dib mb2"><b>Network</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
@@ -73,7 +73,7 @@
           inactive: '<a class="dib mt2 f6" href="#">Show more</a>'
         }
       },
-      sortBy: ['isRefined', 'name:asc'],
+      sortBy: ['isRefined', 'count:desc', 'name:asc'],
       templates: {
         header: '<span class="dib mb2"><b>Studio</b></span>',
         item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'

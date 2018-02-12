@@ -37,7 +37,7 @@
       sortBy: ['isRefined', 'name:asc'],
       templates: {
         header: '<b>Network</b>',
-        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> <span class="ttu">{{label}}</span> - {{count}}'
+        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> <span class="ttu">{{label}}</span> <span class="black-50">({{count}})</span>'
       }
     })
   );
@@ -50,7 +50,7 @@
       sortBy: ['isRefined', 'name:asc'],
       templates: {
         header: '<b>Year</b>',
-        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} - {{count}}'
+        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
   );
@@ -64,7 +64,7 @@
       sortBy: ['isRefined', 'name:asc'],
       templates: {
         header: '<b>Studio</b>',
-        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} - {{count}}'
+        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
   );
@@ -77,7 +77,7 @@
       sortBy: ['isRefined', 'name:asc'],
       templates: {
         header: '<b>Genre</b>',
-        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} - {{count}}'
+        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
   );
@@ -90,9 +90,10 @@
       attributeName: 'cam',
       operator: 'and',
       sortBy: ['isRefined', 'name:asc'],
+      autoHideContainer: false,
       templates: {
         header: '<b>Cam</b>',
-        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} - {{count}}'
+        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
   );

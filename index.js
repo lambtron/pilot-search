@@ -37,7 +37,7 @@
       sortBy: ['isRefined', 'name:asc'],
       templates: {
         header: '<b>Network</b>',
-        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> <span class="ttu">{{label}}</span> <span class="black-50">({{count}})</span>'
+        item: '<input type="checkbox" {{#isRefined}}checked{{/isRefined}}> {{label}} <span class="black-50">({{count}})</span>'
       }
     })
   );
